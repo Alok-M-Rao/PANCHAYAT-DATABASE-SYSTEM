@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C4FD116-C7E6-457E-87DF-5B0BEB29B8F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PANCHAYATVB.My.MyApplication</StartupObject>
+    <RootNamespace>PANCHAYATVB</RootNamespace>
+    <AssemblyName>PANCHAYATVB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PANCHAYATVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PANCHAYATVB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CITIZENLogin.Designer.vb">
+      <DependentUpon>CITIZENLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CITIZENLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCITIZEN.Designer.vb">
+      <DependentUpon>DeleteCITIZEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCITIZEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteISSUE.Designer.vb">
+      <DependentUpon>DeleteISSUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteISSUE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMEETING.Designer.vb">
+      <DependentUpon>DeleteMEETING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMEETING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMEMBER.Designer.vb">
+      <DependentUpon>DeleteMEMBER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePROJECT.Designer.vb">
+      <DependentUpon>DeletePROJECT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePROJECT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSARPANCH.Designer.vb">
+      <DependentUpon>DeleteSARPANCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSARPANCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSECRETARY.Designer.vb">
+      <DependentUpon>DeleteSECRETARY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSECRETARY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteWELFARE.Designer.vb">
+      <DependentUpon>DeleteWELFARE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteWELFARE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteWORK.Designer.vb">
+      <DependentUpon>DeleteWORK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteWORK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCITIZEN.Designer.vb">
+      <DependentUpon>InsertCITIZEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCITIZEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertGOVERNMENT.Designer.vb">
+      <DependentUpon>InsertGOVERNMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertGOVERNMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertISSUE.Designer.vb">
+      <DependentUpon>InsertISSUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertISSUE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertLAW.Designer.vb">
+      <DependentUpon>InsertLAW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertLAW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertMEETING.Designer.vb">
+      <DependentUpon>InsertMEETING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertMEETING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertMEMBER.Designer.vb">
+      <DependentUpon>InsertMEMBER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertMEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertPANCHAYAT.Designer.vb">
+      <DependentUpon>InsertPANCHAYAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPANCHAYAT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertPROJECT.Designer.vb">
+      <DependentUpon>InsertPROJECT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPROJECT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertSARPANCH.Designer.vb">
+      <DependentUpon>InsertSARPANCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSARPANCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertSECRETARY.Designer.vb">
+      <DependentUpon>InsertSECRETARY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertSECRETARY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertWELFARE.Designer.vb">
+      <DependentUpon>InsertWELFARE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertWELFARE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertWORK.Designer.vb">
+      <DependentUpon>InsertWORK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertWORK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyCITIZEN.Designer.vb">
+      <DependentUpon>ModifyCITIZEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyCITIZEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyGOVERNMENT.Designer.vb">
+      <DependentUpon>ModifyGOVERNMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyGOVERNMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyISSUE.Designer.vb">
+      <DependentUpon>ModifyISSUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyISSUE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyMEETING.Designer.vb">
+      <DependentUpon>ModifyMEETING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyMEETING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyMEMBER.Designer.vb">
+      <DependentUpon>ModifyMEMBER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyMEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPANCHAYAT.Designer.vb">
+      <DependentUpon>ModifyPANCHAYAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPANCHAYAT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyPROJECT.Designer.vb">
+      <DependentUpon>ModifyPROJECT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyPROJECT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifySARPANCH.Designer.vb">
+      <DependentUpon>ModifySARPANCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifySARPANCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifySECRETARY.Designer.vb">
+      <DependentUpon>ModifySECRETARY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifySECRETARY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyWELFARE.Designer.vb">
+      <DependentUpon>ModifyWELFARE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyWELFARE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SARPANCHLogin.Designer.vb">
+      <DependentUpon>SARPANCHLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SARPANCHLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCITIZEN.Designer.vb">
+      <DependentUpon>SearchCITIZEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCITIZEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchGOVERNMENT.Designer.vb">
+      <DependentUpon>SearchGOVERNMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchGOVERNMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchISSUE.Designer.vb">
+      <DependentUpon>SearchISSUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchISSUE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchLAW.Designer.vb">
+      <DependentUpon>SearchLAW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchLAW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMEETING.Designer.vb">
+      <DependentUpon>SearchMEETING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMEETING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMEMBER.Designer.vb">
+      <DependentUpon>SearchMEMBER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPANCHAYAT.Designer.vb">
+      <DependentUpon>SearchPANCHAYAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPANCHAYAT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPROJECT.Designer.vb">
+      <DependentUpon>SearchPROJECT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPROJECT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSARPANCH.Designer.vb">
+      <DependentUpon>SearchSARPANCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSARPANCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSECRETARY.Designer.vb">
+      <DependentUpon>SearchSECRETARY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSECRETARY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchWELFARE.Designer.vb">
+      <DependentUpon>SearchWELFARE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchWELFARE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchWORK.Designer.vb">
+      <DependentUpon>SearchWORK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchWORK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECRETARYLogin.Designer.vb">
+      <DependentUpon>SECRETARYLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SECRETARYLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINLogin.Designer.vb">
+      <DependentUpon>ADMINLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCITIZEN.Designer.vb">
+      <DependentUpon>ViewCITIZEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCITIZEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewGOVERNMENT.Designer.vb">
+      <DependentUpon>ViewGOVERNMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGOVERNMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewISSUE.Designer.vb">
+      <DependentUpon>ViewISSUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewISSUE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLAW.Designer.vb">
+      <DependentUpon>ViewLAW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLAW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMEETING.Designer.vb">
+      <DependentUpon>ViewMEETING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMEETING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMEMBER.Designer.vb">
+      <DependentUpon>ViewMEMBER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPANCHAYAT.Designer.vb">
+      <DependentUpon>ViewPANCHAYAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPANCHAYAT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPROJECT.Designer.vb">
+      <DependentUpon>ViewPROJECT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPROJECT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSARPANCH.Designer.vb">
+      <DependentUpon>ViewSARPANCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSARPANCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSECRETARY.Designer.vb">
+      <DependentUpon>ViewSECRETARY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSECRETARY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewWELFARE.Designer.vb">
+      <DependentUpon>ViewWELFARE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWELFARE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewWORKS.Designer.vb">
+      <DependentUpon>ViewWORKS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWORKS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CITIZENLogin.resx">
+      <DependentUpon>CITIZENLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCITIZEN.resx">
+      <DependentUpon>DeleteCITIZEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteISSUE.resx">
+      <DependentUpon>DeleteISSUE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMEETING.resx">
+      <DependentUpon>DeleteMEETING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMEMBER.resx">
+      <DependentUpon>DeleteMEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePROJECT.resx">
+      <DependentUpon>DeletePROJECT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSARPANCH.resx">
+      <DependentUpon>DeleteSARPANCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSECRETARY.resx">
+      <DependentUpon>DeleteSECRETARY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteWELFARE.resx">
+      <DependentUpon>DeleteWELFARE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteWORK.resx">
+      <DependentUpon>DeleteWORK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCITIZEN.resx">
+      <DependentUpon>InsertCITIZEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertGOVERNMENT.resx">
+      <DependentUpon>InsertGOVERNMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertISSUE.resx">
+      <DependentUpon>InsertISSUE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertLAW.resx">
+      <DependentUpon>InsertLAW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertMEETING.resx">
+      <DependentUpon>InsertMEETING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertMEMBER.resx">
+      <DependentUpon>InsertMEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPANCHAYAT.resx">
+      <DependentUpon>InsertPANCHAYAT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPROJECT.resx">
+      <DependentUpon>InsertPROJECT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertSARPANCH.resx">
+      <DependentUpon>InsertSARPANCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertSECRETARY.resx">
+      <DependentUpon>InsertSECRETARY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertWELFARE.resx">
+      <DependentUpon>InsertWELFARE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertWORK.resx">
+      <DependentUpon>InsertWORK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyCITIZEN.resx">
+      <DependentUpon>ModifyCITIZEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyGOVERNMENT.resx">
+      <DependentUpon>ModifyGOVERNMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyISSUE.resx">
+      <DependentUpon>ModifyISSUE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyMEETING.resx">
+      <DependentUpon>ModifyMEETING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyMEMBER.resx">
+      <DependentUpon>ModifyMEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyPANCHAYAT.resx">
+      <DependentUpon>ModifyPANCHAYAT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyPROJECT.resx">
+      <DependentUpon>ModifyPROJECT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifySARPANCH.resx">
+      <DependentUpon>ModifySARPANCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifySECRETARY.resx">
+      <DependentUpon>ModifySECRETARY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyWELFARE.resx">
+      <DependentUpon>ModifyWELFARE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SARPANCHLogin.resx">
+      <DependentUpon>SARPANCHLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCITIZEN.resx">
+      <DependentUpon>SearchCITIZEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchGOVERNMENT.resx">
+      <DependentUpon>SearchGOVERNMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchISSUE.resx">
+      <DependentUpon>SearchISSUE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchLAW.resx">
+      <DependentUpon>SearchLAW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMEETING.resx">
+      <DependentUpon>SearchMEETING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMEMBER.resx">
+      <DependentUpon>SearchMEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPANCHAYAT.resx">
+      <DependentUpon>SearchPANCHAYAT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPROJECT.resx">
+      <DependentUpon>SearchPROJECT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSARPANCH.resx">
+      <DependentUpon>SearchSARPANCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSECRETARY.resx">
+      <DependentUpon>SearchSECRETARY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchWELFARE.resx">
+      <DependentUpon>SearchWELFARE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchWORK.resx">
+      <DependentUpon>SearchWORK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SECRETARYLogin.resx">
+      <DependentUpon>SECRETARYLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINLogin.resx">
+      <DependentUpon>ADMINLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCITIZEN.resx">
+      <DependentUpon>ViewCITIZEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewGOVERNMENT.resx">
+      <DependentUpon>ViewGOVERNMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewISSUE.resx">
+      <DependentUpon>ViewISSUE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLAW.resx">
+      <DependentUpon>ViewLAW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMEETING.resx">
+      <DependentUpon>ViewMEETING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMEMBER.resx">
+      <DependentUpon>ViewMEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPANCHAYAT.resx">
+      <DependentUpon>ViewPANCHAYAT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPROJECT.resx">
+      <DependentUpon>ViewPROJECT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSARPANCH.resx">
+      <DependentUpon>ViewSARPANCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSECRETARY.resx">
+      <DependentUpon>ViewSECRETARY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewWELFARE.resx">
+      <DependentUpon>ViewWELFARE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewWORKS.resx">
+      <DependentUpon>ViewWORKS.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mannen_india.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article-2720779-206417E200000578-758_634x475.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\An-early-nineteenth-century-painting-depicting.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nirman-village.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
